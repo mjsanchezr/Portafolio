@@ -172,7 +172,7 @@
             "id": "ux-design-ibm",
             "title": "User Experience Design Fundamentals",
             "issuer": "IBM",
-            "date": "2024",
+            "date": "2025",
             "credentialId": "IBM-UXD-2024",
             "badgeColor": "from-blue-600 to-cyan-600",
             "skills": [
@@ -187,8 +187,8 @@
             "id": "emerging-tech-ibm",
             "title": "Explore Emerging Technologies",
             "issuer": "IBM",
-            "date": "2024",
-            "credentialId": "IBM-ET-2024",
+            "date": "2025",
+            "credentialId": "IBM-ET-2025",
             "badgeColor": "from-indigo-600 to-purple-600",
             "skills": [
                 "AI & Machine Learning",
@@ -202,8 +202,8 @@
             "id": "web-dev-ibm",
             "title": "Web Development Fundamentals",
             "issuer": "IBM",
-            "date": "2024",
-            "credentialId": "IBM-WDF-2024",
+            "date": "2025",
+            "credentialId": "IBM-WDF-2025",
             "badgeColor": "from-orange-600 to-red-600",
             "skills": [
                 "HTML5",
@@ -217,13 +217,13 @@
     "chartData": [
         {
             "name": "Nexus ERP",
-            "hours": 320,
+            "hours": 20,
             "technologies": 7,
             "color": "#6366f1"
         },
         {
             "name": "Maze Hunter",
-            "hours": 240,
+            "hours": 60,
             "technologies": 6,
             "color": "#22d3ee"
         }
