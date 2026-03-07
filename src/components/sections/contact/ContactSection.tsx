@@ -46,12 +46,21 @@ export function ContactSection() {
     } = useForm<ContactFormData>();
 
     const onSubmit = async (data: ContactFormData) => {
-        // Simulate async submission (replace with actual email API)
-        console.log('Contact form data:', data);
-        await new Promise(res => setTimeout(res, 1000));
+        // Show loading state for a better feel
+        await new Promise(res => setTimeout(res, 800));
+
+        // Construct WhatsApp message
+        const message = `*New Portfolio Contact*\n\n*Name:* ${data.name}\n*Email:* ${data.email}\n*Subject:* ${data.subject}\n\n*Message:*\n${data.message}`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/584129229895?text=${encodedMessage}`;
+
+        // Attempt to open WhatsApp
+        window.open(whatsappUrl, '_blank');
+
         setSubmitted(true);
         reset();
-        setTimeout(() => setSubmitted(false), 4000);
+        // Keep success message visible longer so they can use the fallback if needed
+        setTimeout(() => setSubmitted(false), 8000);
     };
 
     const inputClass = 'input-field w-full';
@@ -93,9 +102,19 @@ export function ContactSection() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-1">Message sent!</h4>
-                                    <p className="text-gray-400">Thank you for reaching out. I'll get back to you soon.</p>
+                                <div className="flex flex-col gap-2">
+                                    <h4 className="text-xl font-bold text-white mb-1">Message Ready!</h4>
+                                    <p className="text-gray-400 max-w-xs mx-auto">
+                                        WhatsApp should have opened in a new tab. If not, click the button below:
+                                    </p>
+                                    <a
+                                        href={`https://wa.me/584129229895?text=${encodeURIComponent(`*New Portfolio Contact*\n\n(Follow up manual send)`)}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-primary text-sm py-2 px-6 mt-2 self-center"
+                                    >
+                                        Open WhatsApp Manually
+                                    </a>
                                 </div>
                             </motion.div>
                         ) : (
