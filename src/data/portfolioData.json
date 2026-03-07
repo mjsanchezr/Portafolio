@@ -37,7 +37,7 @@
             ],
             "demoUrl": "https://mjsanchezr.github.io/Proyecto-SI-NexusC.A",
             "githubUrl": "https://github.com/mjsanchezr/Proyecto-SI-NexusC.A",
-            "hoursSpent": 320,
+            "hoursSpent": 20,
             "features": [
                 "Strategic dashboard with real-time KPI metrics and charts",
                 "Finance module: budgets, transactions, expense reports",
@@ -88,7 +88,7 @@
             ],
             "demoUrl": "https://mjsanchezr.github.io/Proyecto-POO-MAZEHUNTER",
             "githubUrl": "https://github.com/mjsanchezr/Proyecto-POO-MAZEHUNTER",
-            "hoursSpent": 240,
+            "hoursSpent": 60,
             "features": [
                 "Procedurally generated mazes with configurable difficulty",
                 "Fog-of-war mechanics for increased challenge",
