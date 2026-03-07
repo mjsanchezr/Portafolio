@@ -4,7 +4,7 @@
  */
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import type { Project } from '../types';
+import type { Project } from '../../../core/types';
 
 interface ProjectModalProps {
     project: Project | null;

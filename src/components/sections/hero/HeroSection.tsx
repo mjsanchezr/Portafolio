@@ -3,7 +3,7 @@
  * and social links. Uses Framer Motion for staggered entrance.
  */
 import { motion } from 'framer-motion';
-import { scrollToSection } from '../utils/helpers';
+import { scrollToSection } from '../../../core/utils/helpers';
 
 const GitHubIcon = () => (
     <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">

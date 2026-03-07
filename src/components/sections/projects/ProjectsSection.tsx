@@ -8,9 +8,9 @@ import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
     ResponsiveContainer, Cell, Legend,
 } from 'recharts';
-import { useProjects } from '../hooks/useProjects';
+import { useProjects } from './useProjects';
 import { ProjectModal } from './ProjectModal';
-import type { Project } from '../types';
+import type { Project } from '../../../core/types';
 
 // ---- Presentation: Single project card ----
 interface ProjectCardProps {

@@ -4,8 +4,8 @@
  */
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useScrollSpy } from '../hooks/useScrollSpy';
-import { scrollToSection } from '../utils/helpers';
+import { useScrollSpy } from '../../core/hooks/useScrollSpy';
+import { scrollToSection } from '../../core/utils/helpers';
 
 const NAV_LINKS = [
     { id: 'hero', label: 'Home' },

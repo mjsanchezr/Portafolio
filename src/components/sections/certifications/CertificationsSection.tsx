@@ -3,8 +3,8 @@
  */
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import portfolioData from '../data/portfolioData.json';
-import type { Certification } from '../types';
+import portfolioData from '../../../data/portfolioData.json';
+import type { Certification } from '../../../core/types';
 
 export function CertificationsSection() {
     const ref = useRef(null);

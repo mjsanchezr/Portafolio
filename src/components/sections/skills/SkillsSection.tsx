@@ -3,8 +3,8 @@
  */
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import portfolioData from '../data/portfolioData.json';
-import type { SkillCategory } from '../types';
+import portfolioData from '../../../data/portfolioData.json';
+import type { SkillCategory } from '../../../core/types';
 
 const CATEGORY_COLORS: Record<string, string> = {
     'Languages': 'from-indigo-600/20 to-purple-600/10 border-indigo-500/20',

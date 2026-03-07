@@ -1,7 +1,7 @@
 /**
  * Footer — Minimal footer with year and tech credits.
  */
-import { getCurrentYear } from '../utils/helpers';
+import { getCurrentYear } from '../../core/utils/helpers';
 
 export function Footer() {
     return (

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import type { ContactFormData } from '../types';
+import type { ContactFormData } from '../../../core/types';
 
 const CONTACT_INFO = [
     {

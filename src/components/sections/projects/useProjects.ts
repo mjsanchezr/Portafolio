@@ -3,10 +3,10 @@
  * Follows the Container/Presentation pattern: logic lives here, not in the component.
  */
 import { useState, useEffect } from 'react';
-import type { Project, ChartDataPoint } from '../types';
+import type { Project, ChartDataPoint } from '../../../core/types';
 
 // Dynamically import the JSON to simulate async data loading (easy to swap for a real API)
-import portfolioData from '../data/portfolioData.json';
+import portfolioData from '../../../data/portfolioData.json';
 
 interface UseProjectsReturn {
     projects: Project[];

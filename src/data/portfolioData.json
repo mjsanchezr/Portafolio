@@ -44,7 +44,7 @@
                 "HR module: employee management, payroll, performance reviews",
                 "Operations module: inventory, logistics, project tracking",
                 "Role-based access control (Admin, Manager, Employee)",
-                "Dark-themed responsive design with Tailwind CSS",
+                "Responsive design with Tailwind CSS",
                 "Complex form management with React Hook Form",
                 "Smooth animated transitions with Framer Motion",
                 "Data visualizations using Recharts"
@@ -58,8 +58,8 @@
         {
             "id": "maze-hunter",
             "title": "Maze Hunter",
-            "shortDescription": "Maze-solving game in Java with JavaFX, fog-of-war, full statistics system, JSON persistence, and web deployment via TeaVM.",
-            "fullDescription": "Maze Hunter is a feature-rich maze-solving game developed in Java using JavaFX and Maven. The game features procedurally generated mazes with multiple difficulty levels, fog-of-war mechanics, collectible items (crystals, energy cells, bombs), teleportation, and a complete statistics tracking system (Anales). Full game state persistence is achieved via GSON JSON serialization with save/load functionality. A per-screen background music system with volume control was implemented. The project was later compiled to WebAssembly via TeaVM for browser-based deployment on GitHub Pages.",
+            "shortDescription": "Maze-solving game in Java with JavaFX, fog-of-war, full statistics system and JSON persistence.",
+            "fullDescription": "Maze Hunter is a feature-rich maze-solving game developed in Java using JavaFX and Maven. The game features procedurally generated mazes with multiple difficulty levels, fog-of-war mechanics, collectible items (crystals, energy cells, bombs), teleportation, and a complete statistics tracking system (Anales). Full game state persistence is achieved via GSON JSON serialization with save/load functionality. A per-screen background music system with volume control was implemented.",
             "technologies": [
                 {
                     "name": "Java",
@@ -86,7 +86,7 @@
                     "color": "bg-slate-500/20 text-slate-300 border-slate-500/30"
                 }
             ],
-            "demoUrl": "https://mjsanchezr.github.io/Proyecto-POO-MAZEHUNTER",
+            "demoUrl": "https://github.com/mjsanchezr/Proyecto-POO-MAZEHUNTER",
             "githubUrl": "https://github.com/mjsanchezr/Proyecto-POO-MAZEHUNTER",
             "hoursSpent": 60,
             "features": [
