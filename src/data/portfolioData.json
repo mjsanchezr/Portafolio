@@ -4,7 +4,7 @@
             "id": "nexus-ca",
             "title": "Nexus C.A. — ERP System",
             "shortDescription": "Full-featured ERP system for business management with Finance, HR, and Operations modules. Built with React and TypeScript.",
-            "fullDescription": "Nexus C.A. is a comprehensive Enterprise Resource Planning (ERP) system built for real-world business management. It features a modern React frontend with a dark-themed strategic dashboard, full CRUD operations across Finance, HR, and Operations suites, and a role-based access control system. Built entirely in TypeScript using Vite, Radix UI, Recharts, and Framer Motion. The project architecture follows advanced React patterns including Container/Presentation, custom hooks, and complex state management across multiple feature modules.",
+            "fullDescription": "Nexus C.A. is a comprehensive Enterprise Resource Planning (ERP) system built for real-world business management. It features a modern React frontend with a strategic dashboard, full CRUD operations across Finance, HR, and Operations suites, and a role-based access control system. Built entirely in TypeScript using Vite, Radix UI, Recharts, and Framer Motion. The project architecture follows advanced React patterns including Container/Presentation, custom hooks, and complex state management across multiple feature modules.",
             "technologies": [
                 {
                     "name": "React",
