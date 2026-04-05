@@ -5,7 +5,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
-    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+    BarChart, Bar, XAxis, YAxis, Tooltip,
     ResponsiveContainer, Cell, Legend,
 } from 'recharts';
 import { useProjects } from './useProjects';
@@ -201,44 +201,57 @@ export function ProjectsSection() {
                             className="glass-card p-6 sm:p-8"
                         >
                             <h3 className="text-lg font-bold text-white mb-1">Project Statistics</h3>
-                            <p className="text-sm text-gray-400 mb-6">Hours invested and technologies used per project</p>
-                            <ResponsiveContainer width="100%" height={240}>
-                                <BarChart
-                                    data={chartData}
-                                    margin={{ top: 5, right: 20, left: 0, bottom: 85 }}
-                                    barGap={8}
-                                >
-                                    <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" vertical={false} />
-                                    <XAxis
-                                        dataKey="name"
-                                        stroke="#4b5563"
-                                        tick={{ fill: '#9ca3af', fontSize: 10 }}
-                                        axisLine={false}
-                                        tickLine={false}
-                                        interval={0}
-                                        angle={-35}
-                                        textAnchor="end"
-                                        height={90}
-                                    />
-                                    <YAxis
-                                        stroke="#4b5563"
-                                        tick={{ fill: '#9ca3af', fontSize: 12 }}
-                                        axisLine={false}
-                                        tickLine={false}
-                                        width={36}
-                                    />
-                                    <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-                                    <Legend
-                                        formatter={v => <span style={{ color: '#9ca3af', fontSize: '12px' }}>{v === 'hours' ? 'Hours invested' : 'Technologies'}</span>}
-                                    />
-                                    <Bar dataKey="hours" name="hours" radius={[6, 6, 0, 0]} maxBarSize={60}>
-                                        {chartData.map((entry, i) => (
-                                            <Cell key={i} fill={entry.color} fillOpacity={0.9} />
-                                        ))}
-                                    </Bar>
-                                    <Bar dataKey="technologies" name="technologies" radius={[6, 6, 0, 0]} fill="#22d3ee" fillOpacity={0.7} maxBarSize={60} />
-                                </BarChart>
-                            </ResponsiveContainer>
+                            <p className="text-sm text-gray-400 mb-8">Comparison of development time and technical complexity</p>
+                            
+                            <div className="h-[300px] w-full">
+                                <ResponsiveContainer width="100%" height="100%">
+                                    <BarChart
+                                        layout="vertical"
+                                        data={chartData}
+                                        margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
+                                        barGap={12}
+                                    >
+                                        <XAxis type="number" hide />
+                                        <YAxis
+                                            type="category"
+                                            dataKey="name"
+                                            stroke="#9ca3af"
+                                            fontSize={12}
+                                            width={140}
+                                            axisLine={false}
+                                            tickLine={false}
+                                        />
+                                        <Tooltip 
+                                            content={<CustomTooltip />} 
+                                            cursor={{ fill: 'rgba(255,255,255,0.03)' }} 
+                                        />
+                                        <Legend 
+                                            verticalAlign="top" 
+                                            align="right"
+                                            wrapperStyle={{ paddingBottom: '20px' }}
+                                            formatter={(v) => <span className="text-xs text-gray-400 font-medium capitalize">{v === 'hours' ? 'Time Invested' : 'Technologies'}</span>}
+                                        />
+                                        <Bar 
+                                            dataKey="hours" 
+                                            name="hours" 
+                                            radius={[0, 4, 4, 0]} 
+                                            barSize={18}
+                                        >
+                                            {chartData.map((entry, index) => (
+                                                <Cell key={`cell-hours-${index}`} fill={entry.color} fillOpacity={0.8} />
+                                            ))}
+                                        </Bar>
+                                        <Bar 
+                                            dataKey="technologies" 
+                                            name="technologies" 
+                                            radius={[0, 4, 4, 0]} 
+                                            fill="#6366f1" 
+                                            fillOpacity={0.6} 
+                                            barSize={18} 
+                                        />
+                                    </BarChart>
+                                </ResponsiveContainer>
+                            </div>
                         </motion.div>
                     </>
                 )}

@@ -7,8 +7,8 @@ import { useRef } from 'react';
 import { GraduationCap, BookOpen, Rocket, MapPin } from 'lucide-react';
 
 const QUICK_SKILLS = [
-    'React 19', 'Electron', 'Node.js', 'Capacitor',
-    'Java 21', 'SOLID', 'AI Ops', 'Clean Code',
+    'React', 'Electron', 'Node.js', 'Capacitor',
+    'Java', 'SOLID', 'AI Ops', 'Clean Code',
 ];
 
 function AboutCard({
@@ -93,17 +93,17 @@ export function AboutSection() {
                             </h3>
                              <div className="flex flex-col gap-4 text-gray-300 leading-relaxed">
                                 <p>
-                                    I am a <span className="text-purple-400 font-medium">5th-semester Computer Engineering student</span> at{' '}
-                                    <span className="text-indigo-400 font-medium">UCAB</span> (Universidad Católica Andrés Bello),
+                                    I am a <span className="text-white font-semibold">5th-semester Computer Engineering student</span> at{' '}
+                                    <span className="text-indigo-400 font-semibold">UCAB</span> (Universidad Católica Andrés Bello),
                                     focused on architecting scalable software solutions that solve complex business challenges.
                                 </p>
                                 <p>
-                                    My recent work includes architecting a <span className="text-purple-400 font-medium">Hybrid Desktop Platform</span> (Electron/Node.js) for multi-channel
-                                    automation and a <span className="text-purple-400 font-medium">Native Android Financial Engine</span> (Capacitor 8) developed with an <span className="text-purple-400 font-medium">AI-augmented workflow</span>
+                                    My recent work includes architecting a <span className="text-white font-semibold">Hybrid Desktop Platform</span> (Electron/Node.js) for multi-channel
+                                    automation and a <span className="text-white font-semibold">Native Android Financial Engine</span> (Capacitor) developed with an <span className="text-white font-semibold">AI-augmented workflow</span>
                                     for maximum precision and efficiency.
                                 </p>
                                 <p>
-                                    I specialize in <span className="text-purple-400 font-medium">React 19, TypeScript, and Desktop/Logistics Automation</span>,
+                                    I specialize in <span className="text-white font-semibold">React, TypeScript, and Desktop/Logistics Automation</span>,
                                     leveraging modern architectural patterns to deliver high-impact, production-ready software.
                                 </p>
                             </div>

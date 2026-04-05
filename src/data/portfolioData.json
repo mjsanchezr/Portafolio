@@ -7,7 +7,7 @@
             "fullDescription": "A robust desktop application built on a hybrid architecture that orchestrates multiple automation subsystems. It utilizes Electron (v34) as the native container, with a Node.js/Express backend running as an independent child process (forking) to ensure UI fluidity. The system integrates whatsapp-web.js (Puppeteer-based) and Google Cloud APIs (Gmail) for proactive and reactive messaging. Includes a full dashboard in React for real-time monitoring and a secure auto-update system via GitHub Releases, following a strict Separation of Concerns (SoC) design.",
             "technologies": [
                 {
-                    "name": "Electron v34",
+                    "name": "Electron",
                     "color": "bg-sky-500/20 text-sky-300 border-sky-500/30"
                 },
                 {
@@ -15,7 +15,7 @@
                     "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
                 },
                 {
-                    "name": "Node.js (Express)",
+                    "name": "Node.js",
                     "color": "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
                 },
                 {
@@ -60,15 +60,15 @@
                     "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
                 },
                 {
-                    "name": "Tailwind 4",
+                    "name": "Tailwind CSS",
                     "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
                 },
                 {
-                    "name": "Capacitor 8",
+                    "name": "Capacitor",
                     "color": "bg-blue-600/20 text-blue-400 border-blue-600/30"
                 },
                 {
-                    "name": "Chart.js 4",
+                    "name": "Chart.js",
                     "color": "bg-orange-500/20 text-orange-300 border-orange-500/30"
                 },
                 {
@@ -188,7 +188,7 @@
             "icon": "Atom",
             "skills": [
                 "React",
-                "Tailwind 4",
+                "Tailwind CSS",
                 "Framer Motion",
                 "Radix UI",
                 "Vite",
@@ -199,7 +199,7 @@
             "category": "Backend & Desktop",
             "icon": "Monitor",
             "skills": [
-                "Electron v34",
+                "Electron",
                 "Node.js",
                 "Express.js",
                 "Child Process Forking",
@@ -231,7 +231,7 @@
             "category": "DevOps & Distribution",
             "icon": "Rocket",
             "skills": [
-                "Capacitor 8 (Android)",
+                "Capacitor (Android)",
                 "Electron Builder",
                 "GitHub Releases",
                 "Git / GitHub",
