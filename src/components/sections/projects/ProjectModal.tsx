@@ -51,25 +51,29 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     {/* Modal panel */}
                     <motion.div
                         id="project-modal"
-                        className="relative z-10 w-full max-w-2xl max-h-[90vh] overflow-y-auto glass-card p-8 shadow-2xl shadow-black/50"
+                        className="relative z-10 w-full max-w-2xl max-h-[85vh] overflow-y-auto glass-card flex flex-col shadow-2xl shadow-black/50 no-scrollbar"
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
                         transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                     >
-                        {/* Close button */}
-                        <button
-                            id="modal-close"
-                            onClick={onClose}
-                            className="absolute top-4 right-4 p-2 rounded-lg hover:bg-white/10 text-gray-400 hover:text-white transition-colors"
-                        >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                        {/* Sticky header/close area */}
+                        <div className="sticky top-0 right-0 p-4 pb-0 flex justify-end z-[20] pointer-events-none">
+                            <button
+                                id="modal-close"
+                                onClick={onClose}
+                                className="pointer-events-auto p-2.5 rounded-full bg-slate-900/40 border border-white/10 hover:bg-slate-800/60 text-white shadow-lg backdrop-blur-md transition-all duration-200 transform hover:scale-105"
+                                aria-label="Close modal"
+                            >
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
 
-                        {/* Header */}
-                        <div className="mb-6">
+                        <div className="p-6 sm:p-10 pt-0">
+                            {/* Header */}
+                            <div className="mb-6">
                             <div className="flex items-start justify-between gap-4 mb-3 pr-8">
                                 <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                                 <span className={`flex-shrink-0 px-3 py-1 rounded-full text-xs font-medium border ${statusMap[project.status].color}`}>
@@ -155,8 +159,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                                     Live Demo
                                 </a>
                             )}
-                        </div>
-                    </motion.div>
+                                </div>
+                            </div>
+                        </motion.div>
                 </motion.div>
             )}
         </AnimatePresence>

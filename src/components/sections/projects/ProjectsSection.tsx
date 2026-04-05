@@ -203,12 +203,12 @@ export function ProjectsSection() {
                             <h3 className="text-lg font-bold text-white mb-1">Project Statistics</h3>
                             <p className="text-sm text-gray-400 mb-8">Comparison of development time and technical complexity</p>
                             
-                            <div className="h-[300px] w-full">
+                            <div className="h-[320px] w-full">
                                 <ResponsiveContainer width="100%" height="100%">
                                     <BarChart
                                         layout="vertical"
                                         data={chartData}
-                                        margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
+                                        margin={{ top: 5, right: 40, left: 0, bottom: 5 }}
                                         barGap={12}
                                     >
                                         <XAxis type="number" hide />
@@ -220,6 +220,7 @@ export function ProjectsSection() {
                                             width={140}
                                             axisLine={false}
                                             tickLine={false}
+                                            tick={{ fill: '#9ca3af', fontSize: 11 }}
                                         />
                                         <Tooltip 
                                             content={<CustomTooltip />} 
@@ -228,14 +229,14 @@ export function ProjectsSection() {
                                         <Legend 
                                             verticalAlign="top" 
                                             align="right"
-                                            wrapperStyle={{ paddingBottom: '20px' }}
-                                            formatter={(v) => <span className="text-xs text-gray-400 font-medium capitalize">{v === 'hours' ? 'Time Invested' : 'Technologies'}</span>}
+                                            wrapperStyle={{ paddingBottom: '30px', paddingRight: '10px' }}
+                                            formatter={(v) => <span className="text-[10px] sm:text-xs text-gray-400 font-medium capitalize">{v === 'hours' ? 'Time Invested' : 'Technologies'}</span>}
                                         />
                                         <Bar 
                                             dataKey="hours" 
                                             name="hours" 
                                             radius={[0, 4, 4, 0]} 
-                                            barSize={18}
+                                            barSize={16}
                                         >
                                             {chartData.map((entry, index) => (
                                                 <Cell key={`cell-hours-${index}`} fill={entry.color} fillOpacity={0.8} />
@@ -247,7 +248,7 @@ export function ProjectsSection() {
                                             radius={[0, 4, 4, 0]} 
                                             fill="#6366f1" 
                                             fillOpacity={0.6} 
-                                            barSize={18} 
+                                            barSize={16} 
                                         />
                                     </BarChart>
                                 </ResponsiveContainer>

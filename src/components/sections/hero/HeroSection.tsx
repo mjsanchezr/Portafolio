@@ -93,11 +93,11 @@ export function HeroSection() {
                     <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-300">
                         Full Stack Developer
                     </p>
-                    <div className="flex flex-wrap justify-center gap-2 mt-2">
+                    <div className="flex flex-nowrap justify-center gap-2 mt-2 overflow-x-auto no-scrollbar px-4">
                         {['React', 'Electron', 'TypeScript', 'Node.js'].map(tech => (
                             <span
                                 key={tech}
-                                className="font-mono text-sm text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-md"
+                                className="font-mono text-sm text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-md whitespace-nowrap flex-shrink-0"
                             >
                                 {tech}
                             </span>
