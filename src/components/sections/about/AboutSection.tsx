@@ -6,8 +6,8 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const QUICK_SKILLS = [
-    'React', 'TypeScript', 'Java', 'Tailwind CSS',
-    'Vite', 'Git', 'OOP', 'SOLID',
+    'React', 'TypeScript', 'Node.js', 'SQL',
+    'Java', 'Tailwind CSS', 'OOP', 'SOLID',
 ];
 
 function AboutCard({
@@ -77,7 +77,7 @@ export function AboutSection() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             <AboutCard icon="🎓" title="University" value="UCAB" />
                             <AboutCard icon="📚" title="Semester" value="5th — Comp. Eng." />
-                            <AboutCard icon="💼" title="Freelance" value="Fiverr" />
+                            <AboutCard icon="🚀" title="Focus" value="Full Stack" />
                             <AboutCard icon="📍" title="Location" value="Venezuela" />
                         </div>
                     </motion.div>
@@ -88,23 +88,22 @@ export function AboutSection() {
                             <h3 className="text-xl font-bold text-white mb-4">
                                 Hey, I'm Mario 👋
                             </h3>
-                            <div className="flex flex-col gap-4 text-gray-300 leading-relaxed">
+                             <div className="flex flex-col gap-4 text-gray-300 leading-relaxed">
                                 <p>
-                                    I'm a <span className="text-white font-medium">5th-semester Computer Engineering student</span> at{' '}
+                                    I am a <span className="text-white font-medium">5th-semester Computer Engineering student</span> at{' '}
                                     <span className="text-indigo-400 font-medium">UCAB</span> (Universidad Católica Andrés Bello),
-                                    with hands-on experience in front-end development and object-oriented programming.
+                                    focused on architecting scalable software solutions that solve complex business challenges.
                                 </p>
                                 <p>
-                                    I've built real-world projects like{' '}
-                                    <span className="text-indigo-400 font-medium">Nexus C.A.</span> — a full ERP system in React &
-                                    TypeScript — and{' '}
-                                    <span className="text-cyan-400 font-medium">Maze Hunter</span> — a Java/JavaFX game with JSON
-                                    persistence and web deployment via TeaVM.
+                                    My experience ranges from developing full-scale digital transformations like{' '}
+                                    <span className="text-indigo-400 font-medium">Nexus C.A.</span> (ERP) and automating high-end
+                                    logistics for <span className="text-cyan-400 font-medium">Bodega Provisions</span>, to building
+                                    precision financial engines for Engineering Economics.
                                 </p>
                                 <p>
-                                    I'm passionate about building functional, well-crafted solutions and always exploring new
-                                    technologies. Currently available for{' '}
-                                    <span className="text-green-400 font-medium">freelance projects on Fiverr</span>.
+                                    I specialize in <span className="text-white font-medium">React, TypeScript, and SQL</span>,
+                                    combining academic rigor with a practical, result-oriented approach to software development.
+                                    Always exploring how code can drive organizational efficiency and innovation.
                                 </p>
                             </div>
                         </div>

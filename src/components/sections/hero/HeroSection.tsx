@@ -17,12 +17,6 @@ const LinkedInIcon = () => (
     </svg>
 );
 
-const FiverrIcon = () => (
-    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
-        <path d="M23.004 15.588a.995.995 0 10-1.99 0 .995.995 0 001.99 0zm-2.055-6.002c.635.013 1.05.057 1.05.057v2.141s-2.222-.104-2.222 1.847v4.535h-2.236V9.645h2.236v1.232c.637-.691 1.172-1.291 2.172-1.291h.001zm-5.246 1.542c-.303-.22-.673-.38-1.116-.38-.638 0-.901.333-.901.706 0 .408.343.693 1.135.974 1.124.39 2.213.95 2.213 2.463 0 1.64-1.32 2.549-3.074 2.549-1.048 0-2.028-.427-2.767-1.075l.914-1.511c.439.422 1.025.773 1.772.773.541 0 .9-.242.9-.685 0-.423-.382-.672-1.259-.983-1.082-.39-2.05-.927-2.05-2.38 0-1.441 1.133-2.48 2.85-2.48.895 0 1.756.273 2.384.697l-.001.332zm-7.177-2.073h-1.71V7.48h-2.236v1.575h-1.04v2l1.04.001v3.867c0 2.104 1.005 2.993 3.38 2.93.416-.012.703-.07.964-.15v-1.98a2.786 2.786 0 01-.617.066c-.703 0-1.491-.136-1.491-1.22v-3.513h1.71V9.055zm-9.292-.001H1.62v8.978h2.236l-.622-8.978zM2.738 5.498a1.293 1.293 0 100 2.586 1.293 1.293 0 000-2.586z" />
-    </svg>
-);
-
 const SOCIAL_LINKS = [
     {
         name: 'GitHub',
@@ -35,12 +29,6 @@ const SOCIAL_LINKS = [
         url: 'https://www.linkedin.com/in/mario-sanchez-ab2030370',
         icon: <LinkedInIcon />,
         hoverClass: 'hover:text-[#0A66C2] hover:border-[#0A66C2]/40',
-    },
-    {
-        name: 'Fiverr',
-        url: 'https://www.fiverr.com/mariosanchezr',
-        icon: <FiverrIcon />,
-        hoverClass: 'hover:text-[#1DBF73] hover:border-[#1DBF73]/40',
     },
 ];
 
@@ -87,7 +75,7 @@ export function HeroSection() {
                 <motion.div variants={itemVariants} className="mb-6 flex justify-center">
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300">
                         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                        Available for freelance projects
+                        Available for work
                     </span>
                 </motion.div>
 
@@ -103,7 +91,7 @@ export function HeroSection() {
                 {/* Title */}
                 <motion.div variants={itemVariants} className="mb-6">
                     <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-300">
-                        Front-end Developer
+                        Full Stack Developer
                     </p>
                     <div className="flex flex-wrap justify-center gap-2 mt-2">
                         {['React', 'TypeScript', 'Tailwind CSS'].map(tech => (
@@ -122,7 +110,7 @@ export function HeroSection() {
                     variants={itemVariants}
                     className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    Computer Engineering student · Freelancer on Fiverr
+                    5th Semester Computer Engineering Student at UCAB
                 </motion.p>
 
                 {/* CTA Buttons */}

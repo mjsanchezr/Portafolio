@@ -11,20 +11,14 @@ const CONTACT_INFO = [
     {
         icon: '📧',
         label: 'Email',
-        value: 'mario101104s@gmail.com',
-        href: 'mailto:mario101104s@gmail.com',
+        value: 'mjsanchezr.eng@gmail.com',
+        href: 'mailto:mjsanchezr.eng@gmail.com',
     },
     {
         icon: '📱',
         label: 'Phone',
         value: '+58 412 922 9895',
         href: 'tel:+584129229895',
-    },
-    {
-        icon: '💼',
-        label: 'Fiverr',
-        value: 'fiverr.com/mariosanchezr',
-        href: 'https://www.fiverr.com/mariosanchezr',
     },
 ];
 

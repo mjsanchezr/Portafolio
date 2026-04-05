@@ -2,9 +2,9 @@
     "projects": [
         {
             "id": "nexus-ca",
-            "title": "Nexus C.A. — ERP System",
-            "shortDescription": "Full-featured ERP system for business management with Finance, HR, and Operations modules. Built with React and TypeScript.",
-            "fullDescription": "Nexus C.A. is a comprehensive Enterprise Resource Planning (ERP) system built for real-world business management. It features a modern React frontend with a strategic dashboard, full CRUD operations across Finance, HR, and Operations suites, and a role-based access control system. Built entirely in TypeScript using Vite, Radix UI, Recharts, and Framer Motion. The project architecture follows advanced React patterns including Container/Presentation, custom hooks, and complex state management across multiple feature modules.",
+            "title": "Nexus C.A. — ERP Digital Transformation",
+            "shortDescription": "End-to-end ERP solution solving 'islands of information' for a real-world distributor. Built with a decoupled React/TypeScript architecture.",
+            "fullDescription": "Nexus C.A. represents a strategic digital transformation for a distribution company, replacing fragmented processes with a unified Enterprise Resource Planning system. The project features a decoupled architecture using high-performance React patterns, custom hooks for business logic, and a strategic dashboard for real-time decision making. Implemented comprehensive modules for Finance, HR, and Operations, ensuring data consistency across the entire organization through advanced state management and TypeScript safety.",
             "technologies": [
                 {
                     "name": "React",
@@ -37,29 +37,110 @@
             ],
             "demoUrl": "https://mjsanchezr.github.io/Proyecto-SI-NexusC.A",
             "githubUrl": "https://github.com/mjsanchezr/Proyecto-SI-NexusC.A",
-            "hoursSpent": 20,
+            "hoursSpent": 45,
             "features": [
-                "Strategic dashboard with real-time KPI metrics and charts",
-                "Finance module: budgets, transactions, expense reports",
-                "HR module: employee management, payroll, performance reviews",
-                "Operations module: inventory, logistics, project tracking",
-                "Role-based access control (Admin, Manager, Employee)",
-                "Responsive design with Tailwind CSS",
-                "Complex form management with React Hook Form",
-                "Smooth animated transitions with Framer Motion",
-                "Data visualizations using Recharts"
+                "Unified strategic dashboard eliminating data fragmentation",
+                "Finance module: Automated budget tracking and fiscal reporting",
+                "HR module: Centralized employee lifecycle and payroll management",
+                "Operations module: Optimized logistics and inventory tracking",
+                "Granular Role-Based Access Control (RBAC) for corporate security",
+                "Decoupled Container/Presentation architecture for scalability",
+                "Complex data validation layers with React Hook Form",
+                "High-performance data visualization for executive KPIs"
             ],
             "status": "completed",
             "year": 2025,
             "language": "TypeScript",
-            "repoSize": "6036 KB",
-            "lastUpdated": "March 2026"
+            "repoSize": "6.2 MB",
+            "lastUpdated": "April 2026"
+        },
+        {
+            "id": "bodega-provisions",
+            "title": "Bodega Provisions — Logistics Automation",
+            "shortDescription": "Operational automation platform for a premium concierge service in Aruba. Streamlining high-end supply chain and client delivery.",
+            "fullDescription": "Bodega Provisions is a custom-built operational hub designed to automate the logistics of a premium concierge and grocery service in Aruba. The system optimizes the entire workflow from client intake to final delivery, featuring bilingual support and highly efficient order management. By transitioning from manual coordination to this automated platform, the service significantly reduced overhead while maintaining the high standards of a luxury concierge experience.",
+            "technologies": [
+                {
+                    "name": "React",
+                    "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
+                },
+                {
+                    "name": "TypeScript",
+                    "color": "bg-blue-500/20 text-blue-300 border-blue-500/30"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
+                },
+                {
+                    "name": "Electron",
+                    "color": "bg-sky-500/20 text-sky-300 border-sky-500/30"
+                },
+                {
+                    "name": "Node.js",
+                    "color": "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
+                }
+            ],
+            "githubUrl": "https://github.com/mjsanchezr/BODEGA-RELEASES",
+            "hoursSpent": 80,
+            "features": [
+                "Automated logistics workflow for high-end concierge services",
+                "Bilingual customer experience (English/Spanish)",
+                "Optimized delivery routing and inventory synchronization",
+                "Strategic client management and preference tracking",
+                "Desktop application distribution for operational stability",
+                "Secure data handling for premium client profiles"
+            ],
+            "status": "completed",
+            "year": 2026,
+            "language": "TypeScript",
+            "repoSize": "14.5 MB",
+            "lastUpdated": "April 2026"
+        },
+        {
+            "id": "financial-calculator",
+            "title": "Interactive Financial Analysis Engine",
+            "shortDescription": "Advanced Engineering Economics tool for dynamic cash flow visualization, amortization, and financial decision making.",
+            "fullDescription": "Developed as a specialized tool for Engineering Economics, this application provides a sophisticated engine for analyzing complex financial scenarios. It enables users to visualize dynamic cash flows, calculate multiple amortization schedules, and run sensitivity analyses for capital investments. The project focuses on data accuracy and intuitive visual feedback to support critical financial decision-making processes in engineering contexts.",
+            "technologies": [
+                {
+                    "name": "React",
+                    "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
+                },
+                {
+                    "name": "TypeScript",
+                    "color": "bg-blue-500/20 text-blue-300 border-blue-500/30"
+                },
+                {
+                    "name": "Recharts",
+                    "color": "bg-green-500/20 text-green-300 border-green-500/30"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
+                }
+            ],
+            "githubUrl": "https://github.com/mjsanchezr/Portafolio",
+            "hoursSpent": 15,
+            "features": [
+                "Dynamic cash flow visualization with interactive charts",
+                "Complex amortization schedule generator (multiple systems)",
+                "Net Present Value (NPV) and IRR calculation engine",
+                "Real-time parameter adjustment with instant result feedback",
+                "Exportable financial reports for project planning",
+                "Mathematical precision for Engineering Economics standards"
+            ],
+            "status": "completed",
+            "year": 2026,
+            "language": "TypeScript",
+            "repoSize": "2.4 MB",
+            "lastUpdated": "April 2026"
         },
         {
             "id": "maze-hunter",
-            "title": "Maze Hunter",
-            "shortDescription": "Maze-solving game in Java with JavaFX, fog-of-war, full statistics system and JSON persistence.",
-            "fullDescription": "Maze Hunter is a feature-rich maze-solving game developed in Java using JavaFX and Maven. The game features procedurally generated mazes with multiple difficulty levels, fog-of-war mechanics, collectible items (crystals, energy cells, bombs), teleportation, and a complete statistics tracking system (Anales). Full game state persistence is achieved via GSON JSON serialization with save/load functionality. A per-screen background music system with volume control was implemented.",
+            "title": "Maze Hunter — OOP Architecture Study",
+            "shortDescription": "Complex maze-solving engine in Java with fog-of-war, full statistics system and JSON persistence.",
+            "fullDescription": "Maze Hunter is a deep dive into Object-Oriented Programming (OOP) and SOLID principles using Java. The application features procedurally generated mazes, a sophisticated fog-of-war mechanic, and a complete persistence layer using GSON for JSON serialization. It serves as a robust example of clean code practices, modular design, and efficient algorithm implementation in a desktop environment, later ported to the web via TeaVM.",
             "technologies": [
                 {
                     "name": "Java",
@@ -78,30 +159,24 @@
                     "color": "bg-green-500/20 text-green-300 border-green-500/30"
                 },
                 {
-                    "name": "TeaVM",
-                    "color": "bg-violet-500/20 text-violet-300 border-violet-500/30"
-                },
-                {
-                    "name": "OOP / SOLID",
+                    "name": "SOLID / OOP",
                     "color": "bg-slate-500/20 text-slate-300 border-slate-500/30"
                 }
             ],
-            "githubUrl": "https://github.com/mjsanchezr/Proyecto-POO-MAZEHUNTER",
+            "githubUrl": "https://github.com/mariosanchezrodriguez/Proyecto-POO-MAZEHUNTER",
             "hoursSpent": 60,
             "features": [
-                "Procedurally generated mazes with configurable difficulty",
-                "Fog-of-war mechanics for increased challenge",
-                "Collectibles: crystals, energy cells, bombs, teleporters",
-                "Statistics & historical records system (Anales table)",
-                "Full save/load game state via GSON JSON serialization",
-                "Per-screen background music system with mute/volume control",
-                "Pause/resume game functionality with timer persistence",
-                "Web deployment via TeaVM (Java → WebAssembly → GitHub Pages)"
+                "Procedurally generated environments with scaled complexity",
+                "Strict adherence to SOLID principles and OOP patterns",
+                "Advanced persistence system with custom JSON serialization",
+                "History and data tracking via 'Anales' record system",
+                "Multi-platform deployment (JVM and WebAssembly)",
+                "Asynchronous asset management and state synchronization"
             ],
             "status": "completed",
             "year": 2025,
             "language": "Java",
-            "repoSize": "125370 KB",
+            "repoSize": "122 MB",
             "lastUpdated": "March 2026"
         }
     ],
@@ -110,59 +185,50 @@
             "category": "Languages",
             "icon": "💻",
             "skills": [
-                "Java",
-                "JavaScript",
                 "TypeScript",
+                "JavaScript",
+                "Java",
+                "SQL",
                 "Python",
-                "C++",
-                "HTML",
-                "CSS"
+                "HTML5",
+                "CSS3"
             ]
         },
         {
-            "category": "Frameworks & Libraries",
+            "category": "Frontend Architecture",
             "icon": "⚛️",
             "skills": [
-                "React",
+                "React 18",
                 "Tailwind CSS",
                 "Vite",
-                "Radix UI",
                 "Framer Motion",
+                "Radix UI",
                 "Recharts",
                 "React Hook Form"
             ]
         },
         {
-            "category": "Tools",
+            "category": "Developer Tools",
             "icon": "🔧",
             "skills": [
-                "Git",
-                "GitHub",
-                "Excel",
+                "Git / GitHub",
+                "Docker (Learning)",
                 "Maven",
                 "IntelliJ IDEA",
-                "VS Code"
+                "VS Code",
+                "Postman"
             ]
         },
         {
-            "category": "Databases",
-            "icon": "🗄️",
-            "skills": [
-                "SQL (learning)",
-                "JSON Storage"
-            ]
-        },
-        {
-            "category": "Concepts",
+            "category": "Core Concepts",
             "icon": "🧠",
             "skills": [
-                "OOP",
+                "Full Stack Development",
+                "Software Architecture",
                 "SOLID Principles",
-                "Design Patterns",
-                "Data Structures",
-                "Algorithms",
-                "JSON Serialization",
-                "Design Systems"
+                "OOP Patterns",
+                "Agile Methodologies",
+                "RESTful APIs"
             ]
         }
     ],
@@ -215,15 +281,21 @@
     ],
     "chartData": [
         {
+            "name": "Bodega Logistics",
+            "hours": 80,
+            "technologies": 5,
+            "color": "#0ea5e9"
+        },
+        {
             "name": "Nexus ERP",
-            "hours": 20,
+            "hours": 45,
             "technologies": 7,
             "color": "#6366f1"
         },
         {
             "name": "Maze Hunter",
             "hours": 60,
-            "technologies": 6,
+            "technologies": 5,
             "color": "#22d3ee"
         }
     ],
@@ -237,11 +309,6 @@
             "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/mario-sanchez-ab2030370",
             "icon": "linkedin"
-        },
-        {
-            "name": "Fiverr",
-            "url": "https://www.fiverr.com/mariosanchezr",
-            "icon": "fiverr"
         }
     ]
 }
