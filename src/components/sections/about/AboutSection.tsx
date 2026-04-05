@@ -62,7 +62,7 @@ export function AboutSection() {
                         {/* Profile photo */}
                         <div className="relative w-full aspect-square max-w-xs mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-indigo-500/10">
                             <img
-                                src="perfil.jpeg"
+                                src="perfil-new.jpg"
                                 alt="Mario Sánchez — Front-end Developer"
                                 className="w-full h-full object-cover object-center"
                             />
