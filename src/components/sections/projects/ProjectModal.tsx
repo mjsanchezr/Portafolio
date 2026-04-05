@@ -58,15 +58,15 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                         transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                     >
                         {/* Sticky header/close area */}
-                        <div className="sticky top-0 right-0 p-4 pb-0 flex justify-end z-[20] pointer-events-none">
+                        <div className="sticky top-0 right-0 p-4 pb-0 flex justify-end z-[30] pointer-events-none">
                             <button
                                 id="modal-close"
                                 onClick={onClose}
-                                className="pointer-events-auto p-2.5 rounded-full bg-slate-900/40 border border-white/10 hover:bg-slate-800/60 text-white shadow-lg backdrop-blur-md transition-all duration-200 transform hover:scale-105"
+                                className="pointer-events-auto p-3 rounded-full bg-slate-800/95 border border-white/20 hover:bg-slate-700 text-white shadow-2xl backdrop-blur-xl transition-all duration-200 transform hover:scale-110 active:scale-95 flex items-center justify-center"
                                 aria-label="Close modal"
                             >
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
                         </div>
@@ -74,9 +74,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                         <div className="p-6 sm:p-10 pt-0">
                             {/* Header */}
                             <div className="mb-6">
-                            <div className="flex items-start justify-between gap-4 mb-3 pr-8">
-                                <h3 className="text-2xl font-bold text-white">{project.title}</h3>
-                                <span className={`flex-shrink-0 px-3 py-1 rounded-full text-xs font-medium border ${statusMap[project.status].color}`}>
+                            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-3 pr-12">
+                                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{project.title}</h3>
+                                <span className={`inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold border ${statusMap[project.status].color}`}>
                                     {statusMap[project.status].label}
                                 </span>
                             </div>

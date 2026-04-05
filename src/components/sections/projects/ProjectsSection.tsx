@@ -203,12 +203,12 @@ export function ProjectsSection() {
                             <h3 className="text-lg font-bold text-white mb-1">Project Statistics</h3>
                             <p className="text-sm text-gray-400 mb-8">Comparison of development time and technical complexity</p>
                             
-                            <div className="h-[320px] w-full">
+                            <div className="h-[340px] w-full">
                                 <ResponsiveContainer width="100%" height="100%">
                                     <BarChart
                                         layout="vertical"
                                         data={chartData}
-                                        margin={{ top: 5, right: 40, left: 0, bottom: 5 }}
+                                        margin={{ top: 10, right: 40, left: 20, bottom: 5 }}
                                         barGap={12}
                                     >
                                         <XAxis type="number" hide />
@@ -216,11 +216,11 @@ export function ProjectsSection() {
                                             type="category"
                                             dataKey="name"
                                             stroke="#9ca3af"
-                                            fontSize={12}
+                                            fontSize={11}
                                             width={140}
                                             axisLine={false}
                                             tickLine={false}
-                                            tick={{ fill: '#9ca3af', fontSize: 11 }}
+                                            tick={{ fill: '#9ca3af', width: 130 }}
                                         />
                                         <Tooltip 
                                             content={<CustomTooltip />} 
@@ -229,17 +229,22 @@ export function ProjectsSection() {
                                         <Legend 
                                             verticalAlign="top" 
                                             align="right"
-                                            wrapperStyle={{ paddingBottom: '30px', paddingRight: '10px' }}
-                                            formatter={(v) => <span className="text-[10px] sm:text-xs text-gray-400 font-medium capitalize">{v === 'hours' ? 'Time Invested' : 'Technologies'}</span>}
+                                            wrapperStyle={{ paddingBottom: '35px', paddingRight: '10px' }}
+                                            formatter={(v) => (
+                                                <span className="text-[10px] sm:text-xs font-semibold capitalize" style={{ color: v === 'hours' ? '#0ea5e9' : '#6366f1' }}>
+                                                    {v === 'hours' ? 'Time Invested' : 'Technologies'}
+                                                </span>
+                                            )}
                                         />
                                         <Bar 
                                             dataKey="hours" 
                                             name="hours" 
                                             radius={[0, 4, 4, 0]} 
                                             barSize={16}
+                                            fill="#0ea5e9"
                                         >
                                             {chartData.map((entry, index) => (
-                                                <Cell key={`cell-hours-${index}`} fill={entry.color} fillOpacity={0.8} />
+                                                <Cell key={`cell-hours-${index}`} fill={entry.color} />
                                             ))}
                                         </Bar>
                                         <Bar 
@@ -247,7 +252,6 @@ export function ProjectsSection() {
                                             name="technologies" 
                                             radius={[0, 4, 4, 0]} 
                                             fill="#6366f1" 
-                                            fillOpacity={0.6} 
                                             barSize={16} 
                                         />
                                     </BarChart>
