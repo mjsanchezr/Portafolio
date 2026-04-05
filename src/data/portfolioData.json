@@ -4,14 +4,14 @@
             "id": "bodega-auto-responder",
             "title": "Bodega Auto-Responder — Desktop Automation",
             "shortDescription": "Hybrid Electron/Node.js platform for multi-channel messaging automation (WhatsApp & Gmail). Featuring a distributed architecture and automated lifecycle management.",
-            "fullDescription": "A robust desktop application built on a hybrid architecture that orchestrates multiple automation subsystems. It utilizes Electron (v34) as the native container, with a Node.js/Express backend running as an independent child process (forking) to ensure UI fluidity. The system integrates whatsapp-web.js (Puppeteer-based) and Google Cloud APIs (Gmail) for proactive and reactive messaging. Includes a full dashboard in React 19 for real-time monitoring and a secure auto-update system via GitHub Releases, following a strict Separation of Concerns (SoC) design.",
+            "fullDescription": "A robust desktop application built on a hybrid architecture that orchestrates multiple automation subsystems. It utilizes Electron (v34) as the native container, with a Node.js/Express backend running as an independent child process (forking) to ensure UI fluidity. The system integrates whatsapp-web.js (Puppeteer-based) and Google Cloud APIs (Gmail) for proactive and reactive messaging. Includes a full dashboard in React for real-time monitoring and a secure auto-update system via GitHub Releases, following a strict Separation of Concerns (SoC) design.",
             "technologies": [
                 {
                     "name": "Electron v34",
                     "color": "bg-sky-500/20 text-sky-300 border-sky-500/30"
                 },
                 {
-                    "name": "React 19",
+                    "name": "React",
                     "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
                 },
                 {
@@ -53,10 +53,10 @@
             "id": "financial-calculator",
             "title": "Interactive Financial Analysis Hub",
             "shortDescription": "AI-driven professional loan simulator (Android/Web). Implements French Amortization system with high-performance visualizations and native mobile distribution.",
-            "fullDescription": "A professional-grade financial engine designed for Engineering Economics, built with cutting-edge technologies (React 19 and Tailwind 4). The application provides precise simulations for Ordinary Annuities (French System) and features dynamic, synchronized data visualizations for interest and capital decomposition. Developed with an AI-augmented workflow, it stands as a cross-platform solution distributed as a native Android app via Capacitor 8, offering technical reports in PDF and real-time KPI analysis against FED risk-free rates.",
+            "fullDescription": "A professional-grade financial engine designed for Engineering Economics, built with cutting-edge technologies (React and Tailwind 4). The application provides precise simulations for Ordinary Annuities (French System) and features dynamic, synchronized data visualizations for interest and capital decomposition. Developed with an AI-augmented workflow, it stands as a cross-platform solution distributed as a native Android app via Capacitor 8, offering technical reports in PDF and real-time KPI analysis against FED risk-free rates.",
             "technologies": [
                 {
-                    "name": "React 19",
+                    "name": "React",
                     "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
                 },
                 {
@@ -78,7 +78,7 @@
             ],
             "demoUrl": "https://mjsanchezr.github.io/Ingenier-a-Econ-mica-App/",
             "githubUrl": "https://github.com/mjsanchezr/Ingenier-a-Econ-mica-App",
-            "hoursSpent": 20,
+            "hoursSpent": 6,
             "features": [
                 "AI-driven development process optimizing mathematical accuracy",
                 "Cross-platform distribution: Progressive Web App and Native Android (.apk)",
@@ -135,10 +135,10 @@
             "id": "maze-hunter",
             "title": "Maze Hunter — OOP & Patterns Lab",
             "shortDescription": "Sophisticated maze-solving engine in Java/JavaFX. Research-focused project on SOLID principles and complex system state persistence.",
-            "fullDescription": "Maze Hunter is a technical study of high-level Object-Oriented Programming (OOP) and SOLID principles. Built with Java 21 and JavaFX, it implements procedurally generated environments and a complex state persistence system using GSON for JSON serialization. The project showcases mastery of clean architecture, design patterns, and efficient asset management in a modular desktop environment.",
+            "fullDescription": "Maze Hunter is a technical study of high-level Object-Oriented Programming (OOP) and SOLID principles. Built with Java 22 and JavaFX, it implements procedurally generated environments and a complex state persistence system using GSON for JSON serialization. The project showcases mastery of clean architecture, design patterns, and efficient asset management in a modular desktop environment.",
             "technologies": [
                 {
-                    "name": "Java 21",
+                    "name": "Java",
                     "color": "bg-orange-500/20 text-orange-300 border-orange-500/30"
                 },
                 {
@@ -174,21 +174,20 @@
     "skillCategories": [
         {
             "category": "Programming Languages",
-            "icon": "💻",
+            "icon": "Code",
             "skills": [
                 "TypeScript",
-                "JavaScript (ES6+)",
-                "Java 21",
+                "JavaScript",
+                "Java",
                 "Python",
-                "C++",
-                "SQL"
+                "C++"
             ]
         },
         {
             "category": "Frontend Architecture",
-            "icon": "⚛️",
+            "icon": "Atom",
             "skills": [
-                "React 19",
+                "React",
                 "Tailwind 4",
                 "Framer Motion",
                 "Radix UI",
@@ -198,7 +197,7 @@
         },
         {
             "category": "Backend & Desktop",
-            "icon": "🖥️",
+            "icon": "Monitor",
             "skills": [
                 "Electron v34",
                 "Node.js",
@@ -209,7 +208,7 @@
         },
         {
             "category": "Automation & APIs",
-            "icon": "🤖",
+            "icon": "Cpu",
             "skills": [
                 "Puppeteer",
                 "whatsapp-web.js",
@@ -220,9 +219,9 @@
         },
         {
             "category": "Databases & Persistence",
-            "icon": "🗄️",
+            "icon": "Database",
             "skills": [
-                "SQL",
+                "SQL (Learning)",
                 "JSON Serialization (GSON)",
                 "JSON Storage",
                 "Imapflow / Mailparser"
@@ -230,7 +229,7 @@
         },
         {
             "category": "DevOps & Distribution",
-            "icon": "🚀",
+            "icon": "Rocket",
             "skills": [
                 "Capacitor 8 (Android)",
                 "Electron Builder",
@@ -241,7 +240,7 @@
         },
         {
             "category": "System Design",
-            "icon": "🧠",
+            "icon": "Brain",
             "skills": [
                 "SOLID Principles",
                 "SoC (Separation of Concerns)",
@@ -307,7 +306,7 @@
         },
         {
             "name": "Nexus ERP",
-            "hours": 45,
+            "hours": 20,
             "technologies": 5,
             "color": "#6366f1"
         },

@@ -4,20 +4,23 @@
  */
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { GraduationCap, BookOpen, Rocket, MapPin } from 'lucide-react';
 
 const QUICK_SKILLS = [
-    'React 19', 'Electron', 'Node.js', 'SQL',
-    'Capacitor', 'Java 21', 'SOLID', 'AI Ops',
+    'React 19', 'Electron', 'Node.js', 'Capacitor',
+    'Java 21', 'SOLID', 'AI Ops', 'Clean Code',
 ];
 
 function AboutCard({
-    icon, title, value,
+    icon: Icon, title, value,
 }: {
-    icon: string; title: string; value: string;
+    icon: any; title: string; value: string;
 }) {
     return (
         <div className="glass-card p-4 flex items-center gap-3">
-            <span className="text-2xl">{icon}</span>
+            <div className="text-indigo-400">
+                <Icon size={24} />
+            </div>
             <div>
                 <p className="text-xs text-gray-500 uppercase tracking-wider">{title}</p>
                 <p className="text-sm font-semibold text-white">{value}</p>
@@ -75,10 +78,10 @@ export function AboutSection() {
 
                         {/* Quick stats */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <AboutCard icon="🎓" title="University" value="UCAB" />
-                            <AboutCard icon="📚" title="Semester" value="5th — Comp. Eng." />
-                            <AboutCard icon="🚀" title="Focus" value="Full Stack" />
-                            <AboutCard icon="📍" title="Location" value="Venezuela" />
+                            <AboutCard icon={GraduationCap} title="University" value="UCAB" />
+                            <AboutCard icon={BookOpen} title="Semester" value="5th — Comp. Eng." />
+                            <AboutCard icon={Rocket} title="Focus" value="Full Stack" />
+                            <AboutCard icon={MapPin} title="Location" value="Venezuela" />
                         </div>
                     </motion.div>
 
@@ -86,26 +89,25 @@ export function AboutSection() {
                     <motion.div variants={itemVariants} className="lg:col-span-3 flex flex-col gap-8">
                         <div>
                             <h3 className="text-xl font-bold text-white mb-4">
-                                Hey, I'm Mario 👋
+                                Hey, I'm Mario
                             </h3>
                              <div className="flex flex-col gap-4 text-gray-300 leading-relaxed">
                                 <p>
-                                    I am a <span className="text-white font-medium">5th-semester Computer Engineering student</span> at{' '}
+                                    I am a <span className="text-purple-400 font-medium">5th-semester Computer Engineering student</span> at{' '}
                                     <span className="text-indigo-400 font-medium">UCAB</span> (Universidad Católica Andrés Bello),
                                     focused on architecting scalable software solutions that solve complex business challenges.
                                 </p>
                                 <p>
-                                    My recent work includes architecting a **Hybrid Desktop Platform** (Electron/Node.js) for multi-channel
-                                    automation and a **Native Android Financial Engine** (Capacitor 8) developed with an **AI-augmented workflow**
+                                    My recent work includes architecting a <span className="text-purple-400 font-medium">Hybrid Desktop Platform</span> (Electron/Node.js) for multi-channel
+                                    automation and a <span className="text-purple-400 font-medium">Native Android Financial Engine</span> (Capacitor 8) developed with an <span className="text-purple-400 font-medium">AI-augmented workflow</span>
                                     for maximum precision and efficiency.
                                 </p>
                                 <p>
-                                    I specialize in <span className="text-white font-medium">React 19, TypeScript, and Desktop/Logistics Automation</span>,
+                                    I specialize in <span className="text-purple-400 font-medium">React 19, TypeScript, and Desktop/Logistics Automation</span>,
                                     leveraging modern architectural patterns to deliver high-impact, production-ready software.
                                 </p>
                             </div>
                         </div>
-
                         {/* Skills badges */}
                         <div>
                             <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">

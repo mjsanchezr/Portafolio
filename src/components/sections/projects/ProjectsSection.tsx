@@ -205,16 +205,20 @@ export function ProjectsSection() {
                             <ResponsiveContainer width="100%" height={240}>
                                 <BarChart
                                     data={chartData}
-                                    margin={{ top: 5, right: 20, left: 0, bottom: 5 }}
+                                    margin={{ top: 5, right: 20, left: 0, bottom: 85 }}
                                     barGap={8}
                                 >
                                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" vertical={false} />
                                     <XAxis
                                         dataKey="name"
                                         stroke="#4b5563"
-                                        tick={{ fill: '#9ca3af', fontSize: 13 }}
+                                        tick={{ fill: '#9ca3af', fontSize: 10 }}
                                         axisLine={false}
                                         tickLine={false}
+                                        interval={0}
+                                        angle={-35}
+                                        textAnchor="end"
+                                        height={90}
                                     />
                                     <YAxis
                                         stroke="#4b5563"
