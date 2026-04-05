@@ -6,8 +6,8 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const QUICK_SKILLS = [
-    'React', 'TypeScript', 'Node.js', 'SQL',
-    'Java', 'Tailwind CSS', 'OOP', 'SOLID',
+    'React 19', 'Electron', 'Node.js', 'SQL',
+    'Capacitor', 'Java 21', 'SOLID', 'AI Ops',
 ];
 
 function AboutCard({
@@ -95,15 +95,13 @@ export function AboutSection() {
                                     focused on architecting scalable software solutions that solve complex business challenges.
                                 </p>
                                 <p>
-                                    My experience ranges from developing full-scale digital transformations like{' '}
-                                    <span className="text-indigo-400 font-medium">Nexus C.A.</span> (ERP) and automating high-end
-                                    logistics for <span className="text-cyan-400 font-medium">Bodega Provisions</span>, to building
-                                    precision financial engines for Engineering Economics.
+                                    My recent work includes architecting a **Hybrid Desktop Platform** (Electron/Node.js) for multi-channel
+                                    automation and a **Native Android Financial Engine** (Capacitor 8) developed with an **AI-augmented workflow**
+                                    for maximum precision and efficiency.
                                 </p>
                                 <p>
-                                    I specialize in <span className="text-white font-medium">React, TypeScript, and SQL</span>,
-                                    combining academic rigor with a practical, result-oriented approach to software development.
-                                    Always exploring how code can drive organizational efficiency and innovation.
+                                    I specialize in <span className="text-white font-medium">React 19, TypeScript, and Desktop/Logistics Automation</span>,
+                                    leveraging modern architectural patterns to deliver high-impact, production-ready software.
                                 </p>
                             </div>
                         </div>

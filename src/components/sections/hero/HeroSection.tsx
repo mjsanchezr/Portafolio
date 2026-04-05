@@ -94,7 +94,7 @@ export function HeroSection() {
                         Full Stack Developer
                     </p>
                     <div className="flex flex-wrap justify-center gap-2 mt-2">
-                        {['React', 'TypeScript', 'Tailwind CSS'].map(tech => (
+                        {['React 19', 'Electron', 'TypeScript', 'Node.js'].map(tech => (
                             <span
                                 key={tech}
                                 className="font-mono text-sm text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-md"

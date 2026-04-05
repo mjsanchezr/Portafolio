@@ -1,6 +1,101 @@
 {
     "projects": [
         {
+            "id": "bodega-auto-responder",
+            "title": "Bodega Auto-Responder — Desktop Automation",
+            "shortDescription": "Hybrid Electron/Node.js platform for multi-channel messaging automation (WhatsApp & Gmail). Featuring a distributed architecture and automated lifecycle management.",
+            "fullDescription": "A robust desktop application built on a hybrid architecture that orchestrates multiple automation subsystems. It utilizes Electron (v34) as the native container, with a Node.js/Express backend running as an independent child process (forking) to ensure UI fluidity. The system integrates whatsapp-web.js (Puppeteer-based) and Google Cloud APIs (Gmail) for proactive and reactive messaging. Includes a full dashboard in React 19 for real-time monitoring and a secure auto-update system via GitHub Releases, following a strict Separation of Concerns (SoC) design.",
+            "technologies": [
+                {
+                    "name": "Electron v34",
+                    "color": "bg-sky-500/20 text-sky-300 border-sky-500/30"
+                },
+                {
+                    "name": "React 19",
+                    "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
+                },
+                {
+                    "name": "Node.js (Express)",
+                    "color": "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
+                },
+                {
+                    "name": "Google Cloud",
+                    "color": "bg-blue-500/20 text-blue-300 border-blue-500/30"
+                },
+                {
+                    "name": "Puppeteer",
+                    "color": "bg-green-500/20 text-green-300 border-green-500/30"
+                },
+                {
+                    "name": "Framer Motion",
+                    "color": "bg-pink-500/20 text-pink-300 border-pink-500/30"
+                }
+            ],
+            "githubUrl": "https://github.com/mjsanchezr/BODEGA-RELEASES",
+            "hoursSpent": 85,
+            "features": [
+                "Distributed architecture with Electron Main and Node.js Child Process",
+                "WhatsApp automation via QR-based session persistence (Puppeteer)",
+                "Official Gmail integration through Google Cloud OAuth2 and APIs",
+                "Real-time monitoring dashboard with Recharts and Radix UI",
+                "Automated release system with Electron Builder and GitHub Updates",
+                "Resilient service management (auto-recovery of backend processes)",
+                "Proactive vs. Reactive automation engine (Trigger-based logic)",
+                "Clean-code structure with strict Separation of Concerns (SoC)"
+            ],
+            "status": "completed",
+            "year": 2026,
+            "language": "JavaScript / Node.js",
+            "repoSize": "18.2 MB",
+            "lastUpdated": "April 2026"
+        },
+        {
+            "id": "financial-calculator",
+            "title": "Interactive Financial Analysis Hub",
+            "shortDescription": "AI-driven professional loan simulator (Android/Web). Implements French Amortization system with high-performance visualizations and native mobile distribution.",
+            "fullDescription": "A professional-grade financial engine designed for Engineering Economics, built with cutting-edge technologies (React 19 and Tailwind 4). The application provides precise simulations for Ordinary Annuities (French System) and features dynamic, synchronized data visualizations for interest and capital decomposition. Developed with an AI-augmented workflow, it stands as a cross-platform solution distributed as a native Android app via Capacitor 8, offering technical reports in PDF and real-time KPI analysis against FED risk-free rates.",
+            "technologies": [
+                {
+                    "name": "React 19",
+                    "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
+                },
+                {
+                    "name": "Tailwind 4",
+                    "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
+                },
+                {
+                    "name": "Capacitor 8",
+                    "color": "bg-blue-600/20 text-blue-400 border-blue-600/30"
+                },
+                {
+                    "name": "Chart.js 4",
+                    "color": "bg-orange-500/20 text-orange-300 border-orange-500/30"
+                },
+                {
+                    "name": "Vite",
+                    "color": "bg-purple-500/20 text-purple-300 border-purple-500/30"
+                }
+            ],
+            "demoUrl": "https://mjsanchezr.github.io/Ingenier-a-Econ-mica-App/",
+            "githubUrl": "https://github.com/mjsanchezr/Ingenier-a-Econ-mica-App",
+            "hoursSpent": 20,
+            "features": [
+                "AI-driven development process optimizing mathematical accuracy",
+                "Cross-platform distribution: Progressive Web App and Native Android (.apk)",
+                "Synchronized charts for real-time visualization of debt balances",
+                "Professional PDF reporting with jsPDF and Share API integration",
+                "Critical Analysis module comparing loans vs. FED 2026 projections",
+                "Mobile-first design with high-fidelity micro-animations (Framer Motion)",
+                "Precise financial engine calculating EITR and total financial costs",
+                "Educational pop-ups explaining formulas and financial metrics"
+            ],
+            "status": "completed",
+            "year": 2026,
+            "language": "React / JavaScript",
+            "repoSize": "4.1 MB",
+            "lastUpdated": "April 2026"
+        },
+        {
             "id": "nexus-ca",
             "title": "Nexus C.A. — ERP Digital Transformation",
             "shortDescription": "End-to-end ERP solution solving 'islands of information' for a real-world distributor. Built with a decoupled React/TypeScript architecture.",
@@ -15,24 +110,8 @@
                     "color": "bg-blue-500/20 text-blue-300 border-blue-500/30"
                 },
                 {
-                    "name": "Tailwind CSS",
-                    "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
-                },
-                {
-                    "name": "Vite",
-                    "color": "bg-purple-500/20 text-purple-300 border-purple-500/30"
-                },
-                {
-                    "name": "Radix UI",
+                    "name": "RADIX UI",
                     "color": "bg-indigo-500/20 text-indigo-300 border-indigo-500/30"
-                },
-                {
-                    "name": "Framer Motion",
-                    "color": "bg-pink-500/20 text-pink-300 border-pink-500/30"
-                },
-                {
-                    "name": "Recharts",
-                    "color": "bg-green-500/20 text-green-300 border-green-500/30"
                 }
             ],
             "demoUrl": "https://mjsanchezr.github.io/Proyecto-SI-NexusC.A",
@@ -44,9 +123,7 @@
                 "HR module: Centralized employee lifecycle and payroll management",
                 "Operations module: Optimized logistics and inventory tracking",
                 "Granular Role-Based Access Control (RBAC) for corporate security",
-                "Decoupled Container/Presentation architecture for scalability",
-                "Complex data validation layers with React Hook Form",
-                "High-performance data visualization for executive KPIs"
+                "Decoupled Container/Presentation architecture for scalability"
             ],
             "status": "completed",
             "year": 2025,
@@ -55,95 +132,13 @@
             "lastUpdated": "April 2026"
         },
         {
-            "id": "bodega-provisions",
-            "title": "Bodega Provisions — Logistics Automation",
-            "shortDescription": "Operational automation platform for a premium concierge service in Aruba. Streamlining high-end supply chain and client delivery.",
-            "fullDescription": "Bodega Provisions is a custom-built operational hub designed to automate the logistics of a premium concierge and grocery service in Aruba. The system optimizes the entire workflow from client intake to final delivery, featuring bilingual support and highly efficient order management. By transitioning from manual coordination to this automated platform, the service significantly reduced overhead while maintaining the high standards of a luxury concierge experience.",
-            "technologies": [
-                {
-                    "name": "React",
-                    "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
-                },
-                {
-                    "name": "TypeScript",
-                    "color": "bg-blue-500/20 text-blue-300 border-blue-500/30"
-                },
-                {
-                    "name": "Tailwind CSS",
-                    "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
-                },
-                {
-                    "name": "Electron",
-                    "color": "bg-sky-500/20 text-sky-300 border-sky-500/30"
-                },
-                {
-                    "name": "Node.js",
-                    "color": "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
-                }
-            ],
-            "githubUrl": "https://github.com/mjsanchezr/BODEGA-RELEASES",
-            "hoursSpent": 80,
-            "features": [
-                "Automated logistics workflow for high-end concierge services",
-                "Bilingual customer experience (English/Spanish)",
-                "Optimized delivery routing and inventory synchronization",
-                "Strategic client management and preference tracking",
-                "Desktop application distribution for operational stability",
-                "Secure data handling for premium client profiles"
-            ],
-            "status": "completed",
-            "year": 2026,
-            "language": "TypeScript",
-            "repoSize": "14.5 MB",
-            "lastUpdated": "April 2026"
-        },
-        {
-            "id": "financial-calculator",
-            "title": "Interactive Financial Analysis Engine",
-            "shortDescription": "Advanced Engineering Economics tool for dynamic cash flow visualization, amortization, and financial decision making.",
-            "fullDescription": "Developed as a specialized tool for Engineering Economics, this application provides a sophisticated engine for analyzing complex financial scenarios. It enables users to visualize dynamic cash flows, calculate multiple amortization schedules, and run sensitivity analyses for capital investments. The project focuses on data accuracy and intuitive visual feedback to support critical financial decision-making processes in engineering contexts.",
-            "technologies": [
-                {
-                    "name": "React",
-                    "color": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30"
-                },
-                {
-                    "name": "TypeScript",
-                    "color": "bg-blue-500/20 text-blue-300 border-blue-500/30"
-                },
-                {
-                    "name": "Recharts",
-                    "color": "bg-green-500/20 text-green-300 border-green-500/30"
-                },
-                {
-                    "name": "Tailwind CSS",
-                    "color": "bg-teal-500/20 text-teal-300 border-teal-500/30"
-                }
-            ],
-            "githubUrl": "https://github.com/mjsanchezr/Portafolio",
-            "hoursSpent": 15,
-            "features": [
-                "Dynamic cash flow visualization with interactive charts",
-                "Complex amortization schedule generator (multiple systems)",
-                "Net Present Value (NPV) and IRR calculation engine",
-                "Real-time parameter adjustment with instant result feedback",
-                "Exportable financial reports for project planning",
-                "Mathematical precision for Engineering Economics standards"
-            ],
-            "status": "completed",
-            "year": 2026,
-            "language": "TypeScript",
-            "repoSize": "2.4 MB",
-            "lastUpdated": "April 2026"
-        },
-        {
             "id": "maze-hunter",
-            "title": "Maze Hunter — OOP Architecture Study",
-            "shortDescription": "Complex maze-solving engine in Java with fog-of-war, full statistics system and JSON persistence.",
-            "fullDescription": "Maze Hunter is a deep dive into Object-Oriented Programming (OOP) and SOLID principles using Java. The application features procedurally generated mazes, a sophisticated fog-of-war mechanic, and a complete persistence layer using GSON for JSON serialization. It serves as a robust example of clean code practices, modular design, and efficient algorithm implementation in a desktop environment, later ported to the web via TeaVM.",
+            "title": "Maze Hunter — OOP & Patterns Lab",
+            "shortDescription": "Sophisticated maze-solving engine in Java/JavaFX. Research-focused project on SOLID principles and complex system state persistence.",
+            "fullDescription": "Maze Hunter is a technical study of high-level Object-Oriented Programming (OOP) and SOLID principles. Built with Java 21 and JavaFX, it implements procedurally generated environments and a complex state persistence system using GSON for JSON serialization. The project showcases mastery of clean architecture, design patterns, and efficient asset management in a modular desktop environment.",
             "technologies": [
                 {
-                    "name": "Java",
+                    "name": "Java 21",
                     "color": "bg-orange-500/20 text-orange-300 border-orange-500/30"
                 },
                 {
@@ -151,27 +146,23 @@
                     "color": "bg-red-500/20 text-red-300 border-red-500/30"
                 },
                 {
-                    "name": "GSON",
-                    "color": "bg-yellow-500/20 text-yellow-300 border-yellow-500/30"
+                    "name": "SOLID / OOP",
+                    "color": "bg-slate-500/20 text-slate-300 border-slate-500/30"
                 },
                 {
                     "name": "Maven",
                     "color": "bg-green-500/20 text-green-300 border-green-500/30"
-                },
-                {
-                    "name": "SOLID / OOP",
-                    "color": "bg-slate-500/20 text-slate-300 border-slate-500/30"
                 }
             ],
-            "githubUrl": "https://github.com/mariosanchezrodriguez/Proyecto-POO-MAZEHUNTER",
+            "githubUrl": "https://github.com/mjsanchezr/Proyecto-POO-MAZEHUNTER",
             "hoursSpent": 60,
             "features": [
-                "Procedurally generated environments with scaled complexity",
-                "Strict adherence to SOLID principles and OOP patterns",
-                "Advanced persistence system with custom JSON serialization",
-                "History and data tracking via 'Anales' record system",
-                "Multi-platform deployment (JVM and WebAssembly)",
-                "Asynchronous asset management and state synchronization"
+                "Complex procedural generation of maze structures",
+                "Full persistence layer using GSON for JSON state serialization",
+                "Mastery of SOLID principles and design patterns",
+                "History and telemetry tracking via 'Anales' record system",
+                "Modular resource management for assets and audio",
+                "Advanced state-machine for game-loop control"
             ],
             "status": "completed",
             "year": 2025,
@@ -182,53 +173,81 @@
     ],
     "skillCategories": [
         {
-            "category": "Languages",
+            "category": "Programming Languages",
             "icon": "💻",
             "skills": [
                 "TypeScript",
-                "JavaScript",
-                "Java",
-                "SQL",
+                "JavaScript (ES6+)",
+                "Java 21",
                 "Python",
-                "HTML5",
-                "CSS3"
+                "C++",
+                "SQL"
             ]
         },
         {
             "category": "Frontend Architecture",
             "icon": "⚛️",
             "skills": [
-                "React 18",
-                "Tailwind CSS",
-                "Vite",
+                "React 19",
+                "Tailwind 4",
                 "Framer Motion",
                 "Radix UI",
-                "Recharts",
-                "React Hook Form"
+                "Vite",
+                "Chart.js / Recharts"
             ]
         },
         {
-            "category": "Developer Tools",
-            "icon": "🔧",
+            "category": "Backend & Desktop",
+            "icon": "🖥️",
             "skills": [
-                "Git / GitHub",
-                "Docker (Learning)",
-                "Maven",
-                "IntelliJ IDEA",
-                "VS Code",
-                "Postman"
+                "Electron v34",
+                "Node.js",
+                "Express.js",
+                "Child Process Forking",
+                "IPC Communication"
             ]
         },
         {
-            "category": "Core Concepts",
+            "category": "Automation & APIs",
+            "icon": "🤖",
+            "skills": [
+                "Puppeteer",
+                "whatsapp-web.js",
+                "Google Cloud APIs (Gmail)",
+                "AI-Augmented Workflows",
+                "RESTful APIs"
+            ]
+        },
+        {
+            "category": "Databases & Persistence",
+            "icon": "🗄️",
+            "skills": [
+                "SQL",
+                "JSON Serialization (GSON)",
+                "JSON Storage",
+                "Imapflow / Mailparser"
+            ]
+        },
+        {
+            "category": "DevOps & Distribution",
+            "icon": "🚀",
+            "skills": [
+                "Capacitor 8 (Android)",
+                "Electron Builder",
+                "GitHub Releases",
+                "Git / GitHub",
+                "Maven"
+            ]
+        },
+        {
+            "category": "System Design",
             "icon": "🧠",
             "skills": [
-                "Full Stack Development",
-                "Software Architecture",
                 "SOLID Principles",
-                "OOP Patterns",
-                "Agile Methodologies",
-                "RESTful APIs"
+                "SoC (Separation of Concerns)",
+                "OOP Design Patterns",
+                "Mobile-First Design",
+                "Accessibility Standards"
             ]
         }
     ],
@@ -281,21 +300,21 @@
     ],
     "chartData": [
         {
-            "name": "Bodega Logistics",
-            "hours": 80,
-            "technologies": 5,
+            "name": "Bodega Auto-Responder",
+            "hours": 85,
+            "technologies": 6,
             "color": "#0ea5e9"
         },
         {
             "name": "Nexus ERP",
             "hours": 45,
-            "technologies": 7,
+            "technologies": 5,
             "color": "#6366f1"
         },
         {
             "name": "Maze Hunter",
             "hours": 60,
-            "technologies": 5,
+            "technologies": 4,
             "color": "#22d3ee"
         }
     ],
